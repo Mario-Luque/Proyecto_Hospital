@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.Proyecto_Hospital" parent="Base.Theme.Proyecto_Hospital">
+        <item name="android:windowFullscreen">true</item>
+        <!-- Otros elementos de personalización -->
+    </style>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Proyecto_Hospital</string>
+    <string name="google_maps_api_key">AIzaSyD1vqiaOaJOWxyyMlIfAijq7vIYVLVkWq0</string> <!-- Aquí agregas la clave API -->
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_actualizar"
+    tools:context=".EditarUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombres_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/nombres"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/icono_usuario"
+                android:drawablePadding="9dp"
+                android:hint="Nombres"
+                android:inputType="text"
+                android:paddingStart="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apellidos_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/apellidos"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/icono_usuario"
+                android:drawablePadding="9dp"
+                android:hint="Apellidos"
+                android:inputType="text"
+                android:paddingStart="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/icono_email"
+                android:drawablePadding="9dp"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/direccion_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Dirección"
+                android:inputType="text"
+                android:drawableStart="@drawable/icono_casa"
+                android:paddingStart="16dp"
+                android:drawablePadding="9dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/celular_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/celular"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Número de celular"
+                android:inputType="phone"
+                android:drawableStart="@drawable/icono_celular"
+                android:paddingStart="16dp"
+                android:drawablePadding="9dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_input"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Nueva Contraseña"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/icono_contra"
+                android:paddingStart="16dp"
+                android:drawablePadding="9dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/teal"
+            android:text="Guardar Cambios"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

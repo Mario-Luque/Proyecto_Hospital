@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Proyecto_Hospital" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Personaliza tu tema aquí si es necesario -->
+    </style>
+</resources>

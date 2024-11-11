@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyecto_Hospital"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Meta-data para la clave de API de Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <activity
+            android:name=".Localizacion_Hospital"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital"/>
+        <activity
+            android:name=".detalle_medicina"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".listar_medicina"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".menu_areas"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".detalle_medicos"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".listar_medicos"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".listar_historial"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".listar_prueba_laboratorio"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".detalle_prueba_laboratorio"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".EditarUsuario"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".RegistrarActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto_Hospital" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
